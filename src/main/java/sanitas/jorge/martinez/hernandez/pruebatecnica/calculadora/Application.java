@@ -1,4 +1,4 @@
-package santalucia.jorge.martinez.hernandez.pruebatecnica.calculadora;
+package sanitas.jorge.martinez.hernandez.pruebatecnica.calculadora;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

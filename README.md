@@ -1,1 +1,1 @@
-# pruebatecnica.calculadora
+Prueba técnica: Calculadora

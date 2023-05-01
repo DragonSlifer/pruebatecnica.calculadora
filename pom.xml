@@ -8,11 +8,11 @@
 		<version>3.0.6</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>santalucia.jorge.martinez.hernandez</groupId>
+	<groupId>sanitas.jorge.martinez.hernandez</groupId>
 	<artifactId>pruebatecnica.calculadora</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>pruebatecnica.calculadora</name>
-	<description>Calculadora Prueba Técnica Santalucía</description>
+	<description>Calculadora Prueba Técnica Sanitas</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>

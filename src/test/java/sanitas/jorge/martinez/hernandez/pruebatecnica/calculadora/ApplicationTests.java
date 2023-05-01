@@ -1,4 +1,4 @@
-package santalucia.jorge.martinez.hernandez.pruebatecnica.calculadora;
+package sanitas.jorge.martinez.hernandez.pruebatecnica.calculadora;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
