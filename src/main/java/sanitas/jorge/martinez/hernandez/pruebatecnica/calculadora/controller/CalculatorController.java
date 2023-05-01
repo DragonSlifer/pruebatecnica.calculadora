@@ -31,9 +31,8 @@ public class CalculatorController {
 
     @GetMapping(value = "/sub")
     public ResponseEntity<Float> sub (float a, float b){
+        Float response = calculatorService.sub(a, b);
 
-        return ResponseEntity
-                .status(HttpStatus.NOT_IMPLEMENTED)
-                .build();
+        return ResponseEntity.ok(response);
     }
 }
