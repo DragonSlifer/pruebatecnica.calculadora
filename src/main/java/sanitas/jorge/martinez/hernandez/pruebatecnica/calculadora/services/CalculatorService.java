@@ -6,6 +6,9 @@ import org.springframework.stereotype.Service;
 @Slf4j
 @Service
 public class CalculatorService {
+    public Float add(float a, float b) {
+        return a + b;
+    }
     public Float sub(float a, float b) {
         return a - b;
     }
