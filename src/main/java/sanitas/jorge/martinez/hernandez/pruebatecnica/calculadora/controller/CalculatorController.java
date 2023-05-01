@@ -1,5 +1,7 @@
 package sanitas.jorge.martinez.hernandez.pruebatecnica.calculadora.controller;
 
+import io.corp.calculator.TracerAPI;
+import io.corp.calculator.TracerImpl;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.coyote.Response;
@@ -20,10 +22,12 @@ import java.net.http.HttpResponse;
 public class CalculatorController {
 
     private static CalculatorService calculatorService;
+    private static TracerAPI tracerAPI;
 
     @GetMapping(value = "/add")
     public ResponseEntity<Float> add (float a, float b){
         Float response = calculatorService.add(a,b);
+        tracerAPI.trace(a + " + " + b + " = " + response);
         return ResponseEntity
                 .ok(response);
     }
@@ -31,7 +35,7 @@ public class CalculatorController {
     @GetMapping(value = "/sub")
     public ResponseEntity<Float> sub (float a, float b){
         Float response = calculatorService.sub(a, b);
-
+        tracerAPI.trace(a + " - " + b + " = " + response);
         return ResponseEntity.ok(response);
     }
 }
